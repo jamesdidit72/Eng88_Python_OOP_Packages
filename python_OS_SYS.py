@@ -16,4 +16,3 @@ import os, sys, datetime, math
 # print(current_system_path())
 # print(working_directory())
 
-print(math.pi)

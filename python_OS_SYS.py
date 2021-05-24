@@ -1,8 +1,8 @@
 import os, sys, datetime, math
 
-print(os.cpu_count())
-print(datetime.datetime.today())
-print(math.remainder(1, 5))
+# print(os.cpu_count())
+# print(datetime.datetime.today())
+# print(math.remainder(1, 5))
 # def current_system_path():
 #     print(f'This is your current path:')
 #     return sys.path
@@ -16,3 +16,4 @@ print(math.remainder(1, 5))
 # print(current_system_path())
 # print(working_directory())
 
+print(math.pi)

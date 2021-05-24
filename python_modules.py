@@ -21,7 +21,7 @@ import math
 
 number = random()
 print(number)
-if number < 0.49999:
+if number <= 0.49999:
     print(math.floor(number))
 else:
     print(math.ceil(number))

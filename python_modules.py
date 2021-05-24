@@ -19,14 +19,20 @@ import math
 from random import random
 import math
 
+# number = random()
+# print(number)
+# if number <= 0.49999:
+#     print(math.floor(number))
+# else:
+#     print(math.ceil(number))
+
+# code along
+
+
 number = random()
 print(number)
-if number <= 0.49999:
-    print(math.floor(number))
-else:
+if number >= 0.5:
     print(math.ceil(number))
-
-
-
-
+else:
+    print(math.floor(number))
 

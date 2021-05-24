@@ -28,14 +28,3 @@ import os, sys
 # system_path = sys.path
 # print(f'This is your current path: {system_path}')
 
-def current_system_path():
-    print(f'This is your current path:')
-    return sys.path
-
-def working_directory():
-    print(f'This is your current working directory:')
-    return os.getcwd()
-
-
-print(current_system_path())
-print(working_directory())

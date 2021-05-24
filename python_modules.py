@@ -12,27 +12,30 @@ import math
 # print(math.ceil(num1))
 # print(math.floor(num1))
 
-#print(random())
-# what is the use case
-#
-
-from random import random
-import math
-
 # number = random()
 # print(number)
-# if number <= 0.49999:
-#     print(math.floor(number))
-# else:
+# if number >= 0.5:
 #     print(math.ceil(number))
+# else:
+#     print(math.floor(number))
 
-# code along
+# os, sys are used to get information about your localhost/ your machine such as name, path etc
+
+import os, sys
+# working_directory = os.getcwd()
+# print(f'This is your current working directory: {working_directory}')
+#
+# system_path = sys.path
+# print(f'This is your current path: {system_path}')
+
+def current_system_path():
+    print(f'This is your current path:')
+    return sys.path
+
+def working_directory():
+    print(f'This is your current working directory:')
+    return os.getcwd()
 
 
-number = random()
-print(number)
-if number >= 0.5:
-    print(math.ceil(number))
-else:
-    print(math.floor(number))
-
+print(current_system_path())
+print(working_directory())

@@ -1,6 +1,6 @@
 #creating a reptile class to inherit everything from animal class
 
-from animal import Animal
+from animal import Animal  # imports the parent class
 
 class Reptile(Animal):
     def __init__(self):
@@ -21,6 +21,6 @@ class Reptile(Animal):
 
 reptile_object = Reptile()
 
-print(f'From animal class: {reptile_object.eat()}')
-print(f'From reptile class: {reptile_object.use_vemon()}')
+# print(f'From animal class: {reptile_object.eat()}')
+# print(f'From reptile class: {reptile_object.use_vemon()}')
 # This is the amazing benefit of using OOP with inheritance (PILLAR 2)

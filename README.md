@@ -107,7 +107,7 @@ print(f'From animal class: {reptile_object.eat()}')
 print(f'From reptile class: {reptile_object.use_vemon()}')
 # This is the amazing benefit of using OOP with inheritance (PILLAR 2)
 ```
-### Snake class
+#### Snake class
 ```python
 from reptile import Reptile
 
@@ -132,7 +132,7 @@ print(f'This function is from the Snake class: {snake_object.use_tongue_to_smell
 print(f'This function is from the Reptile class: {snake_object.seek_heat()}')
 print(f'This function is from the Animal class: {snake_object.eat()}')
 ```
-### Python class (Encapsulaion and polymorphism)
+#### Python class (Encapsulation and polymorphism)
 ```python
 from snake import Snake
 
@@ -159,7 +159,7 @@ dog_object = Python()
 print(dog_object.eat())  # polymorphism (PILLAR 4)
 
 print(f'This function is from the Python class: {python_object.digest_large_prey()}')
-print(f'This function is from the Snake class: {python_object.__use_tongue_to_smell()}')  # fucntion is private, encapsulation (PILLAR 3)
+print(f'This function is from the Snake class: {python_object.__use_tongue_to_smell()}')  # function is private, encapsulation (PILLAR 3)
 print(f'This function is from the Reptile class: {python_object.seek_heat()}')
 print(f'This function is from the Animal class: {python_object.eat()}')
 ```

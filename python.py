@@ -20,6 +20,7 @@ class Python(Snake):
 
 python_object = Python()
 dog_object = Python()
+first_name = 'Afshana'
 print(dog_object.eat())  # polymorphism (PILLAR 4)
 
 # print(f'This function is from the Python class: {python_object.digest_large_prey()}')

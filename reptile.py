@@ -1,6 +1,7 @@
-#creating a reptile class to inherit everything from animal class
+# creating a reptile class to inherit everything from animal class
 
 from animal import Animal  # imports the parent class
+
 
 class Reptile(Animal):
     def __init__(self):
@@ -12,12 +13,16 @@ class Reptile(Animal):
 
     def seek_heat(self):
         return 'Its getting cold, seek some heat'
+
     def hunt(self):
         return 'Hunt for food'
+
     def use_vemon(self):
         return 'Reptile uses Vemon attack'
+
     def attract_male_through_scent(self):
         return 'use scent to attract a partner'
+
 
 reptile_object = Reptile()
 

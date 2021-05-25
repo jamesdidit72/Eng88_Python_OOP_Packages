@@ -16,7 +16,7 @@ class Calculator:  # initialisation of the class
 
 
 
-mycalc = Calculator()
+mycalc = Calculator()  # sets class to a variable
 
 # print(mycalc.add(5, 5)) # calls the class and sets the variables to 5
 # print(mycalc.subtract(5, 5))

@@ -170,3 +170,86 @@ print(f'This function is from the Animal class: {python_object.eat()}')
   - def __init__(self):
   - super().__init__()
 - Requires an object for the class to be called from
+### Simple calculator
+```python
+class Calculator:  # initialisation of the class
+    def add(self, value_1, value_2):  # add function
+        return value_1 + value_2
+
+    def subtract(self, value_1, value_2):  # subtract function
+        return value_1 - value_2
+
+    def multiply(self, value_1, value_2):  # multiply function
+        return value_1 * value_2
+
+    def divide(self, value_1, value_2):  # divide function
+        return value_1 / value_2
+mycalc = Calculator()  # sets class to a variable
+```
+### Functional calculator
+```python
+from OOP_calc_task import Calculator
+
+
+class Function_Calc(Calculator):
+    def __init__(self):  # function that sets the values
+        # a keyword called SUPER which inherits everything from parent class (Animal)at the time of initialisation of this class
+        super().__init__()
+        self.value_1 = 0
+        self.value_2 = 0
+
+    def method(self, value_1, value_2):  # divisible function
+        if value_2 == 0:
+            return False
+        elif value_1 % value_2 == 0:  # if the value_1 can be divided by the value_2 with no remainder, then return True
+            return True
+        else:
+            return False
+
+    def triangle(self, height, base):  # area of a triangle function
+        return (height * base) / 2
+
+    def inch(self, value_1):
+        return value_1 * 2.54  # multiplies the value by the length of an inch in centimeters
+funccalc = Function_Calc()
+```
+### Input calculator
+```python
+from functional_calc import Function_Calc
+
+class Input_Calc(Function_Calc):
+    def __init__(self):  # function that sets the values
+        # a keyword called SUPER which inherits everything from parent class (Animal)at the time of initialisation of this class
+        super().__init__()
+
+    def inputted_value(self):
+        self.value_1 = int(input("Enter a value:  "))
+        self.value_2 = int(input("Enter another value:  "))
+        input_calc.select_method()
+
+    def select_method(self):
+        active = True
+        while active:
+            operator = input('Enter either +, -, *, /, % or inch:  ')
+            if operator == '+':
+                print(f'{self.value_1} {operator} {self.value_2} = {input_calc.add(self.value_1, self.value_2)}')
+            elif operator == '-':
+                print(f'{self.value_1} {operator} {self.value_2} = {input_calc.subtract(self.value_1, self.value_2)}')
+            if operator == '*':
+                print(f'{self.value_1} {operator} {self.value_2} = {input_calc.multiply(self.value_1, self.value_2)}')
+            elif operator == '/':
+                print(f'{self.value_1} {operator} {self.value_2} = {input_calc.divide(self.value_1, self.value_2)}')
+            if operator == '%':
+                print(f'{self.value_1} {operator} {self.value_2} = {input_calc.method(self.value_1, self.value_2)}')
+            elif operator == 'inch':
+                print(f'{self.value_1} {operator} {self.value_2} = {input_calc.inch(self.value_1)}')
+        else:
+            print('failed')
+
+
+input_calc = Input_Calc()
+
+input_calc.inputted_value()
+
+
+```

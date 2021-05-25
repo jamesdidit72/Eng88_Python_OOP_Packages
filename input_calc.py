@@ -37,7 +37,7 @@ class Input_Calc(Function_Calc):
                 print(f'{self.value_1} {operator} {self.value_2} = {input_calc.method(self.value_1, self.value_2)}')
                 active = False
             elif operator.lower() == 'inch':
-                print(f'{self.value_1} {operator} {self.value_2} = {input_calc.inch(self.value_1)}')
+                print(f'{self.value_1} in {operator}/s  = {input_calc.inch(self.value_1)}')
                 active = False
             elif operator.lower() == 'exit':
                 print('exiting...')

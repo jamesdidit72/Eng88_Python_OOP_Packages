@@ -25,5 +25,5 @@ class Function_Calc(Calculator):
 
 funccalc = Function_Calc()
 
-print(f'From simple calculator class: {funccalc.add(5, 5)}')
-print(f'From functional calculator class: {funccalc.method(5, 5)}')
+# print(f'From simple calculator class: {funccalc.add(5, 5)}')
+# print(f'From functional calculator class: {funccalc.method(5, 5)}')

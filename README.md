@@ -28,9 +28,7 @@ if number >= 0.5:
     print(math.ceil(number))
 else:
     print(math.floor(number))
-
 ```
-
 #### os, sys are used to get information about your localhost/ your machine such as name, path etc
 ```python
 import os, sys, datetime, math
@@ -163,7 +161,6 @@ print(f'This function is from the Snake class: {python_object.__use_tongue_to_sm
 print(f'This function is from the Reptile class: {python_object.seek_heat()}')
 print(f'This function is from the Animal class: {python_object.eat()}')
 ```
-
 # Important for OOP code
 - All classes after the parent class require:
   - from 'previous_file_name' import 'previous_class_name'
